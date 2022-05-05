@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CDN bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--bundle bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--CDN Jquery-->
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <!--CDN canvasJS-->
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <!--CDN Ness.css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.jpeg">
+    <title>FIN</title>
+</head>
+
+
+<body>
+<!-- Encabezado -->
+    <header class="text-center pt-5">
+        <img src="./assets/logo.jpeg" class="img-thumbnail mt-3 mb-3 m-auto d-block w-25" alt="Responsive image">
+        <div class="nes-container is-rounded is-dark">
+            <h2>
+                <p>¿Por qué me gustaría formar parte de FIN?</p>
+            </h2>
+        </div>
+        <section class="icon-list mb-3">
+            <i class="nes-mario"></i>
+        </section>
+    </header>
+
+<!-- Bajada -->
+    <div class="nes-container with-title is-centered">
+        <p class="title">9 Razones de peso</p>
+        <p>Aprete cada una de las cajas de a continuación</p>
+        <i class="nes-logo"></i>
+    </div>
+
+<!-- Sección de modales -->
+    <section>
+        <div class="container mt-1">
+            <div class="row">
+                <div class="col col-sm">
+                    <button type="button" class="nes-btn" onclick="document.getElementById('coin1').showModal();">
+                        coin 1
+                    </button>
+                    <dialog class="nes-dialog is-dark is-rounded" id="coin1">
+                        <form method="dialog">
+                            <p class="title">Me apasiona la programación y el desarollo</p>
+                            <div class=" text-center mx-auto">
+                                <i class="nes-icon is-large heart"></i>
+                            </div>
+                            <menu class="dialog-menu">
+                                <button class="nes-btn">Volver</button>
+
+                            </menu>
+                        </form>
+                    </dialog>
+                </div>
+
+                <div class="col col-sm">
+                    <button type="button" class="nes-btn is-primary"
+                        onclick="document.getElementById('coin2').showModal();">
+                        coin 2
+                    </button>
+                    <dialog class="nes-dialog is-dark is-rounded" id="coin2">
+                        <form method="dialog">
+                            <p class="title">Mi lugar favorito de Chile es la Patagonia, de hecho viví un tiempo ahí,
+                                pero por la pandemia me tuve que devolver :/</p>
+                            <div class=" text-center mx-auto">
+                                <i class="nes-icon is-large star"></i>
+                            </div>
+                            <menu class="dialog-menu">
+                                <button class="nes-btn">Volver</button>
+                            </menu>
+                        </form>
+                    </dialog>
+                </div>
+
+                <div class="col col-sm">
+                    <button type="button" class="nes-btn is-success"
+                        onclick="document.getElementById('coin3').showModal();">
+                        coin 3
+                    </button>
+                    <dialog class="nes-dialog is-dark is-rounded" id="coin3">
+                        <form method="dialog">
+                            <p class="title">Necesito consolidarme como desarollador, se programar pero todavía no
+                                profesionalmente</p>
+                            <div class=" text-center mx-auto">
+                                <i class="nes-icon is-large like"></i>
+                            </div>
+                            <menu class="dialog-menu">
+                                <button class="nes-btn">Volver</button>
+                            </menu>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+
+        <div class="container  mt-1">
+            <div class="row">
+                <div class="col col-sm">
+                    <button type="button" class="nes-btn is-warning"
+                        onclick="document.getElementById('coin4').showModal();">
+                        coin 4
+                    </button>
+                    <dialog class="nes-dialog is-dark is-rounded" id="coin4">
+                        <form method="dialog">
+                            <p class="title">He trabajado muchos años en consultorías para el sector público, y...
+                                !realmente necesito un cambio de rubro¡</p>
+                            <div class=" text-center mx-auto">
+                                <i class="nes-icon is-large heart is-empty"></i>
+                            </div>
+
+                            <menu class="dialog-menu">
+                                <button class="nes-btn">Volver</button>
+
+                            </menu>
+                        </form>
+                    </dialog>
+                </div>
+                <div class="col col-sm">
+                    <button type="button" class="nes-btn is-error"
+                        onclick="document.getElementById('coin5').showModal();">
+                        coin 5
+                    </button>
+                    <dialog class="nes-dialog is-dark is-rounded" id="coin5">
+                        <form method="dialog">
+                            <p class="title">Me interesa mucho conocer el mundo de las Start-Up y su cultura
+                                organizaciónal. Ver lugares donde se desarollar innovación con visión </p>
+                            <div class="text-center mx-auto">
+                                <a href="#" class="nes-badge">
+                                    <span class="is-warning">Innovation 100%</span>
+                                </a>
+                            </div>
+                            <menu class="dialog-menu">
+                                <button class="nes-btn">Volver</button>
+                            </menu>
+                        </form>
+                    </dialog>
+                </div>
+                <div class="col col-sm">
+                    <button type="button" class="nes-btn" onclick="document.getElementById('coin6').showModal();">
+                        coin 6
+                    </button>
+                    <dialog class="nes-dialog is-dark is-rounded" id="coin6">
+                        <form method="dialog">
+                            <p class="title"> Desde que conocí Fintual (hace poco la verdad) quede desamasido interesado
+                                en conocer sobre como funciona y ver como se logra la democratización del conocimiento
+                                financiero </p>
+                            <div class="text-center mx-auto">
+                                <i class="snes-logo"></i>
+                            </div>
+                            <menu class="dialog-menu">
+                                <button class="nes-btn">Volver</button>
+
+                            </menu>
+                        </form>
+                    </dialog>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container  mt-1">
+            <div class="row">
+                <div class="col col-sm">
+                    <button type="button" class="nes-btn is-primary"
+                        onclick="document.getElementById('coin7').showModal();">
+                        coin 7
+                    </button>
+                    <dialog class="nes-dialog is-dark is-rounded" id="coin7">
+                        <form method="dialog">
+                            <p class="title"> Quiero conocer más sobre Ruby y el desarrollo Mobile </p>
+                            <div class="text-center mx-auto">
+                                <i class="nes-smartphone"></i>
+                            </div>
+                            <menu class="dialog-menu">
+                                <button class="nes-btn">Volver</button>
+                            </menu>
+                        </form>
+                    </dialog>
+                </div>
+                <div class="col col-sm">
+                    <button type="button" class="nes-btn is-success"
+                        onclick="document.getElementById('coin8').showModal();">
+                        coin 8
+                    </button>
+                    <dialog class="nes-dialog is-dark is-rounded" id="coin8">
+                        <form method="dialog">
+                            <p class="title"> Estoy buscando nuevas oportunidades profesionales y estabilidad
+                                financiera. Se que la programación es el sector adeucado </p>
+                            <div class="text-center mx-auto">
+                                <i class="nes-icon coin is-large"></i>
+                            </div>
+                            <menu class="dialog-menu">
+                                <button class="nes-btn">Volver</button>
+                            </menu>
+                        </form>
+                    </dialog>
+                </div>
+                <div class="col col-sm">
+                    <button type="button" class="nes-btn is-warning"
+                        onclick="document.getElementById('coin9').showModal();">
+                        coin 9
+                    </button>
+                    <dialog class="nes-dialog is-dark is-rounded" id="coin9">
+                        <form method="dialog">
+                            <p class="title">Creo que me falto mostrar más motivación en mi anterior postulación, (y no
+                                es que no lo sintiera, quise ser más formal) y ahora pensé en hacer esta página para
+                                demostra mis ganas de participar en este programa</p>
+                            <div class="text-center mx-auto">
+                                <i class="nes-pokeball"></i>
+                            </div>
+                            <menu class="dialog-menu">
+                                <button class="nes-btn">Volver</button>
+                            </menu>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- Footer -->
+    <section class="icon-list text-center mx-auto pt-5">
+        <footer>
+            <h4>
+                <p>Realizado con el framework NES.css</p>
+            </h4>
+            <a href="https://github.com/emersong24" target="_blank"><i class="nes-icon github is-large"></i></a>
+            <a href="mailto:emersongvalenzuela@gmail.com" target="_blank"><i class="nes-icon gmail is-large"></i></a>
+            <a href="https://www.linkedin.com/in/felipe-maldonado-n%C3%BA%C3%B1ez-54145917a/" target="_blank"><i
+                    class="nes-icon linkedin is-large"></i></a>
+        </footer>
+    </section>
+</body>
+
+
+</html>
